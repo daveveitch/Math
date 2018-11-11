@@ -1,2 +1,2 @@
 # Math
-Includes questions from website
+Random math related things I have worked on.

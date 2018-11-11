@@ -1,2 +1,2 @@
 # Math
-# Some random math related projects/files
+Random math related projects/files (including questions featured on my website)

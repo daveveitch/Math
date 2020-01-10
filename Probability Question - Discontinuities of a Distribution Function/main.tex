@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{etoolbox}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage[makeroom]{cancel}
+\graphicspath{ {./images/} }
+\renewcommand{\arraystretch}{3}
+\setlength\parindent{0pt}
+\newcommand*{\Perm}[2]{{}^{#1}\!P_{#2}}%
+\newcommand*{\Comb}[2]{{}^{#1}C_{#2}}%
+
+
+
+\title{Probability Question - Discontinuities of a Distribution Function  }
+\author{David Veitch}
+\date{January 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Question}
+
+Show that a distribution function has at most countably many
+discontinuities.
+
+\section{Answer}
+
+Let $F$ be an arbitrary distribution function and $\mathcal{D} =\{x \; |\; \exists \; \text{a discontinuity at } F(x)\}$.\\
+
+Since $F$ is a distribution function it is non-decreasing. For an arbitrary $x_1 \in \mathcal{D}$, since a discontinuity exists at $F(x_1)$, we know that $F(x_1-)<F(x_1+)$. Let $A_1=\big(F(x-),F(x+)\big)$. Notice that $A_1$ is an open interval in $[0,1]$ therefore it must contain a rational number $q_1$ (see Section \ref{intervalproof} for a proof of this). \\
+
+Therefore for any discontinuity $x_i$ there $\; \exists \;$ an open interval $A_i$, which is disjoint from all $A_j, j\neq i$, which contains a rational number $q_i$. Therefore we can create a one-to-one function $f:\mathcal{D}\rightarrow \mathbb{Q} \Rightarrow |\mathcal{D}| \leq |\mathbb{Q}| \Rightarrow \mathcal{D}$ is countable $\Rightarrow$ a distribution function has at most countably many discontinuities.
+
+\section{Proof - In Any Interval $(a,b)$ where $a<b$ There Exists a Rational Number in $(a,b)$}\label{intervalproof}
+
+This is true because if $a_0.a_1a_2a_3\dots$ is the infinite decimal expansion of $a$, and $b_0.b_1b_2b_3\dots$ is the infinite decimal expansion of $b$ there will exist some smallest index $i \in \mathbb{Z}^+$ such that $10^{-(i)} \geq b-a \geq 10^{-(i+1)} > 0$.\\
+
+$\Rightarrow a_0.a_1\dots a_ia_{i+1}a_{i+2} + 10^{-(i+2)} \in \mathbb{Q}$ and $a_0.a_1\dots a_ia_{i+1}a_{i+2} + 10^{-(i+2)} \in (a,b)$.
+
+\section{Supplemental Material}
+
+This question is Exercise 1.2.3. in the book Probability: Theory and Examples by Rick Durrett.\\
+
+I like this problem for its simplicity, but also because the result is very useful. Over the Graduate Probability course I took in the Fall of 2019 it came up again and again.
+
+\end{document}

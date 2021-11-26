@@ -34,7 +34,7 @@ discontinuities.
 
 Let $F$ be an arbitrary distribution function and $\mathcal{D} =\{x \; |\; \exists \; \text{a discontinuity at } F(x)\}$. Define $F(x-)=\lim_{y\nearrow x} F(y)$ and $F(x+)=\lim_{y\searrow  x}F(y)$\\
 
-Since $F$ is a distribution function it is non-decreasing. For an arbitrary $x_1 \in \mathcal{D}$, since a discontinuity exists at $F(x_1)$, we know that $F(x_1-)<F(x_1+)$. Let $A_1$ be the interval $\big(F(x_1-),F(x_1+)\big)$. Notice that $A_1$ is an open interval in $[0,1]$ therefore it must contain a rational number $q_1$ (see Section \ref{intervalproof} for a proof of this). \\
+Since $F$ is a distribution function it is non-decreasing. For an arbitrary $x_1 \in \mathcal{D}$, since a discontinuity exists at $F(x_1)$, we know that $F(x_1-)<F(x_1+)$. Let $A_1=\big(F(x_1-),F(x_1+)\big)$. Notice that $A_1$ is an open interval in $[0,1]$ therefore it must contain a rational number $q_1$ (see Section \ref{intervalproof} for a proof of this). \\
 
 Therefore for any discontinuity $x_i$ there $\; \exists \;$ an open interval $A_i$, which is disjoint from all $A_j, j\neq i$, which contains a rational number $q_i$. Therefore we can create a one-to-one function $f:\mathcal{D}\rightarrow \mathbb{Q} \Rightarrow |\mathcal{D}| \leq |\mathbb{Q}| \Rightarrow \mathcal{D}$ is countable $\Rightarrow$ a distribution function has at most countably many discontinuities.
 
